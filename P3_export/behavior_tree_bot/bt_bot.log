@@ -1,0 +1,3199 @@
+INFO:root:
+Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+| Selector: Defense Phase
+| | Sequence: Defend if threatened
+| | | Check: is_any_my_planet_under_threat
+| | | Action: defend_most_threatened_planet
+| | Action: do_nothing
+| Selector: Expansion Phase
+| | Sequence: Expand to valuable neutrals
+| | | Check: if_neutral_planet_available
+| | | Action: expand_aggressively
+| | Action: do_nothing
+| Selector: Attack Phase
+| | Sequence: Attack when profitable
+| | | Check: if_enemy_planet_available
+| | | Action: attack_opportunistically
+| | Action: do_nothing
+| Selector: Reinforcement Phase
+| | Sequence: Reinforce weakest when multi-planet
+| | | Check: have_multiple_planets
+| | | Action: reinforce_weakest_my_planet
+| | Action: do_nothing
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Order:1 18 5
+DEBUG:root:Order:1 12 13
+DEBUG:root:Order:1 17 5
+DEBUG:root:Order:1 11 13
+DEBUG:root:Result: Action: expand_aggressively -> Success
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Order:1 0 38
+DEBUG:root:Order:1 6 23
+DEBUG:root:Result: Action: expand_aggressively -> Success
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Order:1 5 23
+DEBUG:root:Result: Action: expand_aggressively -> Success
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Order:1 9 32
+DEBUG:root:Result: Action: attack_opportunistically -> Success
+DEBUG:root:Result: Sequence: Attack when profitable -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Order:11 17 39
+DEBUG:root:Result: Action: attack_opportunistically -> Success
+DEBUG:root:Result: Sequence: Attack when profitable -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Order:1 19 56
+DEBUG:root:Result: Action: expand_aggressively -> Success
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Order:12 20 56
+DEBUG:root:Result: Action: expand_aggressively -> Success
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:1 6 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:1 6 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:1 6 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:1 6 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:11 5 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:1 6 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Order:11 21 59
+DEBUG:root:Result: Action: expand_aggressively -> Success
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:1 6 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Order:0 22 59
+DEBUG:root:Result: Action: expand_aggressively -> Success
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:1 6 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:11 0 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:1 6 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:18 19 38
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Order:12 15 60
+DEBUG:root:Order:1 16 60
+DEBUG:root:Result: Action: expand_aggressively -> Success
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:17 9 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:17 9 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:17 9 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:17 9 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:17 20 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:17 20 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:11 5 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:11 5 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Order:11 13 60
+DEBUG:root:Result: Action: expand_aggressively -> Success
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:11 5 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:11 5 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:11 5 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:11 5 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Order:12 14 60
+DEBUG:root:Result: Action: expand_aggressively -> Success
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:11 5 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Order:17 20 8
+DEBUG:root:Result: Action: attack_opportunistically -> Success
+DEBUG:root:Result: Sequence: Attack when profitable -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:11 5 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:11 5 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:11 5 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Order:1 7 84
+DEBUG:root:Result: Action: expand_aggressively -> Success
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Order:17 9 9
+DEBUG:root:Result: Action: attack_opportunistically -> Success
+DEBUG:root:Result: Sequence: Attack when profitable -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Order:17 2 44
+DEBUG:root:Result: Action: attack_opportunistically -> Success
+DEBUG:root:Result: Sequence: Attack when profitable -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:17 20 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:18 19 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:17 9 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:17 9 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:2 9 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:2 9 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Order:11 8 84
+DEBUG:root:Result: Action: expand_aggressively -> Success
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:2 9 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Order:12 3 82
+DEBUG:root:Result: Action: expand_aggressively -> Success
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Order:21 13 2
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Success
+DEBUG:root:Result: Sequence: Defend if threatened -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Success
+DEBUG:root:Executing:Action: attack_opportunistically
+DEBUG:root:Result: Action: attack_opportunistically -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Order:21 4 82
+DEBUG:root:Result: Action: expand_aggressively -> Success
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Order:1 10 85
+DEBUG:root:Result: Action: expand_aggressively -> Success
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce)
+DEBUG:root:Executing:Selector: Defense Phase
+DEBUG:root:Executing:Sequence: Defend if threatened
+DEBUG:root:Executing:Check: is_any_my_planet_under_threat
+DEBUG:root:Result: Check: is_any_my_planet_under_threat -> Success
+DEBUG:root:Executing:Action: defend_most_threatened_planet
+DEBUG:root:Result: Action: defend_most_threatened_planet -> Failure
+DEBUG:root:Result: Sequence: Defend if threatened -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Defense Phase -> Success
+DEBUG:root:Executing:Selector: Expansion Phase
+DEBUG:root:Executing:Sequence: Expand to valuable neutrals
+DEBUG:root:Executing:Check: if_neutral_planet_available
+DEBUG:root:Result: Check: if_neutral_planet_available -> Success
+DEBUG:root:Executing:Action: expand_aggressively
+DEBUG:root:Result: Action: expand_aggressively -> Failure
+DEBUG:root:Result: Sequence: Expand to valuable neutrals -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Expansion Phase -> Success
+DEBUG:root:Executing:Selector: Attack Phase
+DEBUG:root:Executing:Sequence: Attack when profitable
+DEBUG:root:Executing:Check: if_enemy_planet_available
+DEBUG:root:Result: Check: if_enemy_planet_available -> Failure
+DEBUG:root:Result: Sequence: Attack when profitable -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Attack Phase -> Success
+DEBUG:root:Executing:Selector: Reinforcement Phase
+DEBUG:root:Executing:Sequence: Reinforce weakest when multi-planet
+DEBUG:root:Executing:Check: have_multiple_planets
+DEBUG:root:Result: Check: have_multiple_planets -> Success
+DEBUG:root:Executing:Action: reinforce_weakest_my_planet
+DEBUG:root:Result: Action: reinforce_weakest_my_planet -> Failure
+DEBUG:root:Result: Sequence: Reinforce weakest when multi-planet -> Failure
+DEBUG:root:Executing:Action: do_nothing
+DEBUG:root:Result: Action: do_nothing -> Success
+DEBUG:root:Result: Selector: Reinforcement Phase -> Success
+DEBUG:root:Result: Sequence: Turn Strategy (Defense -> Expand -> Attack -> Reinforce) -> Success
+DEBUG:root:Finish turn
+
