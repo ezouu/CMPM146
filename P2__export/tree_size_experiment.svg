@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520">
+<rect x="0" y="0" width="100%" height="100%" fill="white"/>
+<text x="500.0" y="30" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18">Experiment 1: Vanilla MCTS win counts vs tree size (P1 fixed at 100)</text>
+<line x1="80" y1="430" x2="970" y2="430" stroke="#333" stroke-width="1"/>
+<line x1="80" y1="60" x2="80" y2="430" stroke="#333" stroke-width="1"/>
+<line x1="75" y1="430.0" x2="970" y2="430.0" stroke="#eee" stroke-width="1"/>
+<text x="70" y="434.0" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">0</text>
+<line x1="75" y1="337.5" x2="970" y2="337.5" stroke="#eee" stroke-width="1"/>
+<text x="70" y="341.5" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">23</text>
+<line x1="75" y1="245.0" x2="970" y2="245.0" stroke="#eee" stroke-width="1"/>
+<text x="70" y="249.0" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">46</text>
+<line x1="75" y1="152.5" x2="970" y2="152.5" stroke="#eee" stroke-width="1"/>
+<text x="70" y="156.5" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">70</text>
+<line x1="75" y1="60.0" x2="970" y2="60.0" stroke="#eee" stroke-width="1"/>
+<text x="70" y="64.0" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">93</text>
+<rect x="101.00" y="211.18" width="40.00" height="218.82" fill="#4c78a8"/>
+<rect x="149.00" y="322.58" width="40.00" height="107.42" fill="#f58518"/>
+<rect x="197.00" y="358.39" width="40.00" height="71.61" fill="#54a24b"/>
+<text x="169.0" y="455" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">50</text>
+<rect x="279.00" y="239.03" width="40.00" height="190.97" fill="#4c78a8"/>
+<rect x="327.00" y="274.84" width="40.00" height="155.16" fill="#f58518"/>
+<rect x="375.00" y="378.28" width="40.00" height="51.72" fill="#54a24b"/>
+<text x="347.0" y="455" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">100</text>
+<rect x="457.00" y="342.47" width="40.00" height="87.53" fill="#4c78a8"/>
+<rect x="505.00" y="147.53" width="40.00" height="282.47" fill="#f58518"/>
+<rect x="553.00" y="402.15" width="40.00" height="27.85" fill="#54a24b"/>
+<text x="525.0" y="455" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">250</text>
+<rect x="635.00" y="358.39" width="40.00" height="71.61" fill="#4c78a8"/>
+<rect x="683.00" y="135.59" width="40.00" height="294.41" fill="#f58518"/>
+<rect x="731.00" y="398.17" width="40.00" height="31.83" fill="#54a24b"/>
+<text x="703.0" y="455" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">500</text>
+<rect x="813.00" y="426.02" width="40.00" height="3.98" fill="#4c78a8"/>
+<rect x="861.00" y="60.00" width="40.00" height="370.00" fill="#f58518"/>
+<rect x="909.00" y="406.13" width="40.00" height="23.87" fill="#54a24b"/>
+<text x="881.0" y="455" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">1000</text>
+<text x="500.0" y="490" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#333">Player 2 tree size (num_nodes)</text>
+<text x="25" y="260.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#333" transform="rotate(-90 25 260.0)">Count (over N games)</text>
+<rect x="710" y="70" width="250" height="70" fill="white" stroke="#ddd"/>
+<rect x="720" y="78" width="12" height="12" fill="#4c78a8"/>
+<text x="740" y="88" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">P1 wins</text>
+<rect x="720" y="98" width="12" height="12" fill="#f58518"/>
+<text x="740" y="108" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">P2 wins</text>
+<rect x="720" y="118" width="12" height="12" fill="#54a24b"/>
+<text x="740" y="128" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">Draws</text>
+<text x="80" y="510" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#666">Rounds per size: 100 | P1 tree size: 100</text>
+</svg>
