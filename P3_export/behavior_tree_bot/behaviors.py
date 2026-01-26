@@ -241,7 +241,37 @@ def defend_most_threatened_planet(state, horizon=12, max_orders=3):
 
     return orders > 0
 
+def evacuate_protocol(state, horizon = 12):
+    # Routine for when a planet is doomed to fall, and so to move resources to nearest friendly or neutral planet.
+    my_planets = state.my_planets()
+    for p in my_planets:
+        enemy_fleets = [f for f in state.enemy_fleets() if f.destination_planet == p.ID and f.turns_remaining <= horizon] 
 
+        if not enemy_fleets:
+            continue
+
+         # Calculating the enemies incoming and if capable of defending against.
+        eta = min(f.turns_remaining for f in enemy_fleets)
+        incoming_enemy = sum(f.num_ships for f in enemy_fleets if f.turns_remaining <= eta)
+
+        # A check on how many of our reinforcements can arrive vs the enemies incoming.
+        possible_defenders = sum(max(0, donor.num_ships - _reserve_ships(state,donor.ID))
+                                 for donor in my_planets
+                                 if donor.ID != p.ID and state.distance(donor.ID, p.ID) <= eta)
+        expected_defenders = p.num_ships + (p.growth_rate * eta) + possible_defenders
+
+         # If enemies outweigh reinforcements, then activate the evacuation protocol.
+        if incoming_enemy > expected_defenders:
+            # A search for the nearest controlled or neutral planet we can go to.
+            safe_planets = [target for target in my_planets if target.ID != p.ID]
+            
+            if not safe_planets:
+                return False
+            
+            destination = max(safe_planets, key = lambda x: x.num_ships)
+            
+            return issue_order(state, p.ID, destination.ID, p.num_ships)
+    return False
 def expand_aggressively(state, max_orders=4):
     """
     Capture multiple neutral planets per turn using 'just enough' ships.
@@ -260,7 +290,7 @@ def expand_aggressively(state, max_orders=4):
         if n.ID in already_targeted:
             continue
         nearest_d = min(state.distance(p.ID, n.ID) for p in my_planets)
-        score = (n.growth_rate + 1) / ((n.num_ships + 1) * (nearest_d + 1))
+        score = ((n.growth_rate ** 2) + 1) / ((n.num_ships + 1) * (nearest_d + 1))
         scored.append((score, n, nearest_d))
     scored.sort(key=lambda t: t[0], reverse=True)
 

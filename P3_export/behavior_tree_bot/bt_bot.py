@@ -33,7 +33,12 @@ def setup_behavior_tree():
         Check(is_any_my_planet_under_threat),
         Action(defend_most_threatened_planet),
     ]
-    defense_phase.child_nodes = [defend_if_threatened, Action(do_nothing)]
+    evacuate_logic = Sequence(name='Evacuate if doomed')
+    evacuate_logic.child_nodes = [
+        Check(is_any_my_planet_under_threat),
+        Action(evacuate_protocol)
+    ]
+    defense_phase.child_nodes = [defend_if_threatened, evacuate_logic, Action(do_nothing)]
 
     expand_phase = Selector(name='Expansion Phase')
     expand_if_possible = Sequence(name='Expand to valuable neutrals')
