@@ -1,0 +1,16 @@
+--?-B-----X-X-?----o-Xo----o------Xo--B---B-----o----X--MMXMM?---??XBB-oX?--BM--?---?B---BBM-M----X-?--X?----B-?M-M?-?-B--o--MX----BBB?--X------EMM-X-MX--X-?-B?--?--B---X--X---M-M-?MEXM------o---BB-?-
+-o---BB-M---X?-M?MBX-?--M--ooBB---?-M--X--?---MB-----o-B--XXo-X----MX---E-B--oM--B-------oMB-MM?o---?o-M-MM---o-o?M--o?M?E-X--M-M-B----E-?MM-XM-X-??-E-o---M-XX-o-M--BM---oBEM----XB--?-M-X?Mo-o--M--MM-
+-B-M-M--X-B-oBB---B?---?-BM-----Eo-?---M?-X-o-----?-M-?-Xo?M-?---X--?-MX-oB-E??---XB-XM-?o----X---XM-BBoo-Xo--o?ooXoE-MM-MXoXM----?---M?o-MM-BM-BBo?oBMEoX-X-M-BB--X-X------M-?--M?-X-MXoBM?Xo---X-B-X--
+-M-MXBM-MoM--B-XX-BX-oB?M--o--B??B--X----o--X-o-----------?B-------MB?MX-?--?-M-?--?BX---B?E--B-o-B-XX----EB--------?o-----B?X------EXM?-X-Mo??X-------XM--?Bo----o-B---o--M--M--B-o?-M-------MM---?----
+-B-EMo---M-MM?oB--ooo?M---EX-XMB-MX-X-XM-o?------BMM---B-----X?-?-M--oo---oB--o-X--B-oXX--MXX---?-M-----oMX-?---XBo----o-BXXM-X-M---?--B---?-?MMXBE----BXXX--X-XB-B-E?MBo-----XBMX--X---M--oo-----?B-X--
+-o-MMXM?X?---?M--?X----Mo-XXMMX----X-XB-------X----XX-X--E-X-M-XM--M--????--B----o-X--B--E--oXoBo-?--MXB---o----?-?-BX-?MB-X---X-oM---X------Bo--oX---o-?-X---o-X--oB-M-EX-X-o-----B----o?M-MX-BM-------
+--o-M---B-?MX---?-B-----B-o---?-?-MM-XBoMMB?-XB-B--?E------Bo--M-X-o-B?oX-?-MMo-?B-oooB----B---BB--MM-XMoX---?oXM-XXo---M-Xo-----?X--XX-?-B-----M-?Xo-Xo------oE-???----?-XoMX--o--?MB------B-?MXM----?-
+-B??-BMXB-B-BBM?-----MM-----B---MX-oM--XX--B--M--?M-?--o-o-?---M-X--?---Xo--------o-?-BX-EM-XE----?-o-X-----XMX??--X-oX--BB?B-?-BMXE--?-BMoB--o----ME------?-MXX-o-oX--?X---M--Xo-M--o-----------BXBM--v
+-M-X---?X--B?B?Xoo-?XX--o--B--X--X--??-B-X-----?MXX---M----?----?-o-X--X-BoM-M-?o-o-?-Xo-o--?M?B---o---B---BB-B---o-XB-MoMX----B---M-M-o--?BBE?-EM--?---X-M-X-o--MB-?MX-M--B---MXB-M--o-----X-----MX--Bf
+--M-?B--X-BMEB?M-oo-B---M-Xo---B--E-M-----oo-?----XM?B---oX-B?BM-MoMXX---M--BXB---oB-E--------?X--o-B?--o?MBBBX-M-M--B----M---?BoM?-M-oMM------oX-oM-o----X-M------B-BBooM--------BB----X----X---M----of
+-M------B?B-XBo----XEo-B-----B-X-oM-EX--Bo--------MoX--ooB----MM-B?-MXB-?B-?MB----MM-X---M--XX----MBM--?X---M---EMX-XMX-BooX-MXX-E---X-o-oB----M-XB-oME?-X-o---X----M--o--MM---M--BM--BM?--o?o----o----f
+--X-X----X-oM?--M-oXX-MM-EX---?XMMBXX------XMM--BMo-----?-o--B--B---oX-X?-oM--?X---B-B?----XX?-o-BBB--X----X-M----Xo?--M--B-o---B?---Bo-oX--M--M-X--E-MM-oXM-X-X-?--?M---o-o?-MBB--XMMMo---o------M---?f
+-X?-o---BXM-oMMBM-BB---MB?--oo-XX-M----E--BM-X-M?-----XMXMMXXM--M--XM?-?X-oo-X-X-MoX-X---oXB-XMoMXX----MX--B-?E-oXE-X--o-X-----?-X--o---BoB?-M-BE--XB------?--MX--o?------o--M----X-----X-BMB-E-X--o-M?f
+-M--?---M-----?-B?----BB--o?X--M-B-X-M-oM-oMB?BM?-M----XM-B-------X--X---M--M-MM--B-E-X------M--XMMXM---------X----?M----BX-?oX---M---?XM-o---B-X-MM--E-B-M-----o-o------|oMBMM|----Mo---?oX?-B--M-----f
+mX--BEEX-X--E--BEE-----BB--?EE-----EBBXEEEBE--E-B--?X-EE-X--?X-BEB-BE?EEEX-X-B-E----X-?EB?X-E-B--?-?BX--E-?E-EEE?E?--EE-?-BXEB-EXX--E-BB-B----XE?E-EXXB-------EX----X?-E-EB--EE|-?--B--XEXEE?---B-E-?E-X
+X--XXXX------XX--XXXX-X--XXXXX----XX--XX----XXXX-XX-XX--X---X-XX-XX--X-X-X-X---X-XXX--XX-X-XXX-X-X-X-XXX-----XX-X-XX-XXX--X----XXXXX--X-X--XXXXX-X-XX-XX-X-XX--XX--XX---X--X-XX--XXXXX-XX-XX--XXXXX--XXX
