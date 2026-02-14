@@ -1,4 +1,13 @@
-from keras.utils import image_dataset_from_directory
+"""
+Preprocess image data for training: read images, RGB grids, float tensors.
+Rescaling to [0, 1] is done in the model (e.g. Rescaling(1./255) in BasicModel).
+
+1. Read in image files          -> image_dataset_from_directory(..., directory)
+2. Preprocess JPEG to RGB        -> color_mode='rgb'
+3. Float tensors                 -> dataset yields float32 batches
+4. Rescale to 0-1                -> model layer Rescaling(1./255)
+"""
+from tensorflow.keras.utils import image_dataset_from_directory
 from config import train_directory, test_directory, image_size, batch_size, validation_split
 
 def _split_data(train_directory, test_directory, batch_size, validation_split):
@@ -10,7 +19,7 @@ def _split_data(train_directory, test_directory, batch_size, validation_split):
         batch_size=batch_size,
         image_size=image_size,
         validation_split=validation_split,
-        subset="both",
+        subset='both',
         seed=47
     )
     print('test dataset:')

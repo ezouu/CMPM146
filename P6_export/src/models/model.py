@@ -15,25 +15,25 @@ class Model:
     def _compile_model(self):
         raise Exception("define_model not implemented yet.")
 
-    def train_model(self, train_dataset, validation_dataset, epochs):
+    def train_model(self, train_dataset, validation_dataset, epochs, callbacks=None):
         history = self.model.fit(
             x=train_dataset,
             epochs=epochs,
             verbose="auto",
-            validation_data=validation_dataset
+            validation_data=validation_dataset,
+            callbacks=callbacks or []
         )
-
         return history
 
     def save_model(self, filename):
         self.model.save(filename)
 
     @staticmethod
-    def load_model(filename):
-        return LoadedModel(filename)
+    def load_model(filename, compile_model=True):
+        return LoadedModel(filename, compile_model)
     
     def evaluate(self, test_dataset):
-        self.model.evaluate(
+        return self.model.evaluate(
             x=test_dataset,
             verbose='auto',
         )
@@ -52,8 +52,8 @@ class Model:
         plot_model(self.model, show_shapes=True, to_file='test.png')
 
 class LoadedModel(Model):
-    def __init__(self, filename):
-        self.model = load_model(filename)
+    def __init__(self, filename, compile_model=True):
+        self.model = load_model(filename, compile=compile_model)
 
     def _define_model(self, input_shape, categories_count):
         pass

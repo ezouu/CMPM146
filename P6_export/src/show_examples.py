@@ -1,6 +1,6 @@
 import numpy as np
 import seaborn as sns
-from keras.utils import load_img
+from tensorflow.keras.utils import load_img
 import matplotlib.pyplot as plt
 import os
 
@@ -20,6 +20,7 @@ def show_examples(count, scale=0.7):
             plt.imshow(img, cmap="gray")
     plt.setp(plt.gcf().get_axes(), xticks=[], yticks=[]);
     plt.subplots_adjust(wspace=0.1, hspace=0.1)
+    plt.savefig("example_samples.png", bbox_inches="tight")
     plt.show()
 
 if __name__ == "__main__":

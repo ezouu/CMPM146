@@ -1,0 +1,24 @@
+# Virtual environments
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# P6_export data and outputs (keep only src code)
+P6_export/src/kaggle/
+P6_export/src/train/
+P6_export/src/test/
+P6_export/src/results/
+P6_export/src/example_samples.png
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
